@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+    <style>
+        .background{
+        height:100vh;
+         width:100%;
+         background-image:radial-gradient(orange,gold,yellow);
+         background-position: center;
+         background-size: cover;
+         padding:10px 10%;
+         overflow:hidden ;
+         font-family: cursive;
+         color: blueviolet;
+         position: relative;
+        }
+        .logo{
+            border:2px solid yellow;
+            border-radius:100%;
+            height:100px;
+            background-color: blue;
+        
+        }
+        nav{
+            padding:10px 0px;
+            display:flex;
+            justify-content:space-between;
+            align-items: center;
+        }
+        ul li{
+            display:inline-block;
+            justify-content:space-around ;
+            margin:10px;
+            list-style-type:none;
+        }
+        div a{
+            padding: 10px;
+        }
+        .login{
+            text-decoration: none;
+            color:black;
+            font-weight:400;
+            font-size:20px;
+        }
+        .download{
+            display:inline-block;
+            text-decoration: none;
+            color:#fff;
+            background-image: linear-gradient(45deg,#df4881,#c430d7);
+            font-size:14px;
+            border-radius: 30px;
+            border-top-right-radius: 0px;
+            transition: 0.5sec;
+        }
+        .content{
+            margin-top:130px;
+            max-width: 600px;
+        }
+        .content h1{
+            font-size:70px ;
+            color:#222;
+            animation-delay: 0.5sec;
+        }
+        .content p{
+            margin:10px 0 30px;
+            color:#333;
+            animation-delay: 0.7sec;
+        }
+        .content .download{
+            padding:20px 60px;
+           font-size: 16pxSS;
+           animation-delay: 1sec;
+        }
+        .download:hover{
+            transform:rotate(90deg);
+            border-top-right-radius: 30px;
+            color:orange;
+        }
+        .feature{
+            border:2px ridge yellow; 
+            border-radius: 100%;
+            height: 500px;
+            width:500px;
+            position:absolute;
+            bottom:0;
+            right:24%;
+        }
+        .anim{
+            animation-delay: 1.5sec;
+        }
+        .anim{
+            transform:translateY(38px);
+            opacity: 1;
+            animation: moveup 0.5sec linear forwards;
+        }
+        @keyframes moveup{
+            100%{
+                opacity: 3;
+                transform:translateY(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <nav>
+            <h2><img src="https://img.freepik.com/free-vector/flat-design-friends-logo-design_23-2149533185.jpg" class="logo"><i style="font-family:fantasy;">friends<sub>zone</sub></i></h2>
+            <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+            <div>
+                <a href="#" class="login">Log In</a>
+                <a href="#" class="download">DOWNLOAD APP</a>
+            </div>
+        </nav>
+        <div class="content">
+            <h1>Find<br>New Friends!</h1>
+            <p >Friendszone is a new social indian website to find new friends,similar to face book but finds more security than FACEBOOK,<br>because every new user has to verify his aadhar for SIGNIN.
+            </p>
+            <a href="#" class="download anim"><i>JOIN NOW</i></a>
+        </div>
+        <img src="LOGO.jpeg" class="feature anim">
+    </div>
+</body>
+</html>
